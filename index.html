@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Greetings</title>
+    <script src="jquery-3.6.0.js"></script>
+    <script src="rank.js"></script>
+</head>
+<body>
+
+    <input type="radio" name="rank" id="pvt" data-color="green" data-standing="PVT.">
+    <label for="pvt">Private</label>
+    <br>
+
+    <input type="radio" name="rank" id="sgt" data-color="blue" data-standing="SGT.">
+    <label for="sgt">Sergeant</label>
+    <br>
+
+    <input type="radio" name="rank" id="maj" data-color="orange" data-standing="MAJ.">
+    <label for="sgt">Major</label>
+    <br>
+
+    <input type="radio" name="rank" id="gen" data-color="red" data-standing="GEN.">
+    <label for="gen">General</label>
+    <br>
+
+    <label for="first-name">Type your first name</label>
+    <input type="text" id="first-name">
+    <br>
+
+    <label for="last-name">Type your last name</label>
+    <input type="text" id="last-name">
+    <br>
+
+    <button>Submit</button>
+
+    <p id="submit"></p>
+
+    <table style="width: 30%">
+        <tr>
+            <th>QTY</th>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Total</th>
+        </tr>
+        <tr>
+            <td>
+                <input type="number" id="qty1" min="0" max="999" data-price="39.99">
+            </td>
+            <td>Learning jQuery</td>
+            <td>$39.99</td>
+            <td><p id="first-order"></p></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="number" id="qty2" min="0" max="999" data-price="14.99">
+            </td>
+            <td>jQuery Donation</td>
+            <td>$14.99</td>
+            <td><p id="second-order"></p></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>Grand Total:</td>
+            <td><p id="grand-total"></p></td>
+        </tr>
+    </table>
+</body>
+</html>
